@@ -6,6 +6,9 @@
     <!--<bean id="environment" class="seniorjava.spring.configurable.DefaultEnvironment" />-->
     <context:spring-configured />
     <context:annotation-config />
+    <!-- change  class loader
+    <context:load-time-weaver aspectj-weaving="autodetect"/>
+    -->
     <context:component-scan base-package="seniorjava" />
 
 </beans>
