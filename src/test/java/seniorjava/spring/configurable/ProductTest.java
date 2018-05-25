@@ -7,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Author: Soroosh Sarabadani
@@ -24,12 +26,13 @@ public class ProductTest extends AbstractJUnit4SpringContextTests {
     @Before
     public void before() {
 
-
         ((MockEnvironment) this.environment).setCurrentDate(time);
     }
 
     @Test
     public void created_product_should_have_current_environment_date() {
+        List<String> s = new ArrayList<String>();
+        s.add("s");
         final Product product = new Product("", "");
         Assert.assertEquals(time, product.getCreateDate());
 
