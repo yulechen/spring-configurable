@@ -1,0 +1,3 @@
+<aspectj>
+    <aspects name="seniorjava.spring.configurable.Foo"/>
+</aspectj>
