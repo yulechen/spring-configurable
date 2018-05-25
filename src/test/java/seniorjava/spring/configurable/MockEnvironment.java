@@ -9,7 +9,6 @@ import java.util.Date;
  */
 public class MockEnvironment implements Environment {
     private Date date;
-    @Override
     public Date getCurrentDate() {
         return this.date;
     }
